@@ -1,0 +1,57 @@
+@mixin btn {
+    width: 216px;
+    height: 36px;
+    border: 1px solid #DF1C1C;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $main-color;
+    border-radius: 5px;
+    background: #FFFFFF;
+    &:hover {
+        background-color: $main-color;
+        color: #FFFFFF;
+        transition: 0.5s;
+    }
+}
+@mixin btn_like {
+    width: 46px;
+    height: 36px;
+    border: 1px solid #C8BDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+@mixin name_auto {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+@mixin descr {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+@mixin price {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+@mixin old_price {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-decoration-line: line-through;
+    color: #837B7B;
+}

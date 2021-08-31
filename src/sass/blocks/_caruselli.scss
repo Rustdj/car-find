@@ -1,0 +1,13 @@
+.caruselli {
+    &__scroll {
+        display: block;
+        margin-left: 48%;
+        img {
+            margin-left: 10px;
+        }
+    }
+    &__img {
+        margin-top: 30px;
+        margin-bottom: -30px;
+    }
+}

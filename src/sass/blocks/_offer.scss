@@ -1,0 +1,102 @@
+.offer {
+    &__photo {
+        margin-left: 45%;
+        padding-top: 20px;
+    }
+    &__autologo {
+        margin-left: 35%;
+        margin-top: 60px;
+        img {
+            margin-left: 43px;
+        }
+        hr {
+            margin-right: 5%;
+            margin-left: 0%;
+        }
+    }
+    &__links {
+        display: flex;
+        padding-top: 50px;
+        margin-left: 40%;
+    }
+    &__title2 {
+        margin-left: 38px;
+    }
+    &__title3 {
+        margin-left: 38px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 50px;
+        .btns {
+            .call {
+                @include btn
+            }
+            .like {
+                margin-left: 18px;
+                @include btn_like
+            }
+        }
+        
+    }
+    &__wrapper2 {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 100px;
+        .btns {
+            .call {
+                @include btn
+            }
+            .like {
+                margin-left: 18px;
+                @include btn_like
+            }
+        }
+    }
+    &__wrapper3 {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 100px;
+        .btns {
+            .call {
+                @include btn
+            }
+            .like {
+                margin-left: 18px;
+                @include btn_like
+            }
+        }
+    }
+    &__item {
+        margin-left: 20px;
+        .name_auto {
+            margin-top: 10px;
+            @include name_auto
+        }
+        .descr {
+            margin-top: 10px;
+            @include descr
+        }
+        .subdescr {
+            margin-top: 5px;
+            @include descr
+        }
+        .color {
+            margin-top: 5px;
+            @include descr
+        }
+        .price {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 13px;
+            margin-bottom: 15px;
+            @include price
+        }
+        .old_price {
+            @include old_price
+        }
+    }
+
+}

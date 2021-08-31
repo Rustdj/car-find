@@ -1,0 +1,96 @@
+.location {
+    .container {
+        padding-top: 80px;
+    }
+    &__map {
+        position: relative;
+    }
+    &__wrapper {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 276px;
+        grid-template-rows: 271px;
+        margin-left: 74%;
+        margin-top: -45%;
+        background: #7D7B7B;
+        opacity: 0.8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    &__addr {
+        position: absolute;
+        width: 192px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #B4ACAC;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-top: 43px;
+        margin-left: 43px;
+        padding: 7px;
+        
+    }
+    &__phone {
+        position: absolute;
+        padding: 4px;
+        width: 191px;
+        height: 34px;
+        text-align: -webkit-center;
+        background: #fff;
+        border: 1px solid #b4acac;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-left: 43px;
+        margin-top: 55px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 11px;
+        color: #000;
+        margin-top: 117px;
+    }
+    &__card {
+        .button {
+            width: 192px;
+            height: 53px;
+            border: 1px solid #DF1C1C;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: $main-color;
+            border-radius: 5px;
+            background: #FFFFFF;
+            margin-left: 42px;
+            margin-top: 186px;
+            &:hover {
+                background-color: $main-color;
+                color: #FFFFFF;
+                transition: 0.5s;
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        padding-top: 30px;
+        p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 9px;
+            line-height: 20px;
+            width: 1308px;
+            height: 160px;
+            margin-left: 30px;
+        }
+        img {
+            width: 150px;
+            height: 100px;
+        }
+    }
+    
+    
+}
