@@ -16,6 +16,11 @@
             color: #fff;
             box-shadow: $main-shadow 2px 2px 4px;
             font-weight: 700;
+            &:hover {
+                background-color: #fff;
+                color: $main-color;
+                transition: 0.5s;
+            }
         }
     }
     &__link {
@@ -25,7 +30,12 @@
         a {
             color: black;
             text-decoration: none;
+            &:hover {
+                text-decoration: revert;
+                color: $main-color;
+            }
         }
+        
     }
     &__icon {
         margin-left: 30px;

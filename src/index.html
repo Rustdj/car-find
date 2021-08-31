@@ -35,7 +35,6 @@
                         <button class="call_back">Обратный звонок</button>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -89,7 +88,7 @@
     </section>
     <section class="market">
         <div class="container">
-            <div class="market__sidenav">
+            <div id="showScroll" class="market__sidenav">
                 <button class="toggle">
                     <img src="icons/emoji/fire.svg" alt="fire">
                     <p>Лучшие предложения</p>
@@ -349,6 +348,30 @@
             </div>
         </div>
     </section>
+    <div class="modal">
+        <div class="modal__wrapper">
+            <img src="icons/logo.png" alt="logo">
+            <img src="icons/emoji/close.svg" alt="close"><p>Нет, спасибо</p>
+            <div class="modal__descr">
+                Оставьте заявку на тест-драйв и мы вам перезвоним через 30 секунд!
+            </div>
+            <div class="modal__input">
+                <input type="text">
+                <button class="btn"></button>
+                <span class="time">00:30</span>
+            </div>
+            <div class="modal__offer">Сейчас не удобно? 
+                <a href=""><u>Выберите удобное время для звонка.</a>
+            </div>
+            <div class="modal__policy">
+                <input class="mini" checked type="radio">
+                <span>Я согласен(а)<a href="#"><u>с условиями обработки данных.</a></span>
+            </div>
+        </div>
+    </div>
     
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
