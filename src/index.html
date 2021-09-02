@@ -32,7 +32,7 @@
                         <div class="title"><a href="tel:+78127778899">+7 (812) 777-88-99</a></div>
                     </div>
                     <div class="header__btn">
-                        <button class="call_back">Обратный звонок</button>
+                        <button data-modal class="call_back">Обратный звонок</button>
                     </div>
                 </div>
             </div>
@@ -91,8 +91,12 @@
             <div id="showScroll" class="market__sidenav">
                 <button class="toggle">
                     <img src="icons/emoji/fire.svg" alt="fire">
-                    <p>Лучшие предложения</p>
-                    <img src="icons/emoji/toggle.svg" alt="toggle">
+                    <div class="descr">Лучшие предложения</div>
+                    <!--<img class="onclick" src="icons/emoji/toggle.svg" alt="toggle">-->
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
                 </button>
                         <input placeholder="Марка" class="long" type="text">
                         <input placeholder="Модель" class="long" type="text">
@@ -119,6 +123,9 @@
                     <div class="market__input6">
                         <input placeholder="Цена от" type="text">
                         <input placeholder="до" type="text">
+                    </div>
+                    <div class="market__button">
+                        <button class="button">Начать поиск</button>
                     </div>
               </div>
         </div>
@@ -347,29 +354,75 @@
                    Текущие предложения на покупку автомобилей не суммируются. Условия уточняйте в отделе продаж.</p>
             </div>
         </div>
-    </section>
-    <div class="modal">
-        <div class="modal__wrapper">
-            <img src="icons/logo.png" alt="logo">
-            <img src="icons/emoji/close.svg" alt="close"><p>Нет, спасибо</p>
-            <div class="modal__descr">
-                Оставьте заявку на тест-драйв и мы вам перезвоним через 30 секунд!
+                    <!--Модальное окно №1-->
+        <div class="screan">
+            <div class="screan__wrapper">
+                <div class="screan__block">
+                    <div class="screan__logo">
+                        <img src="icons/logo.png" alt="logo">
+                    </div>
+                    <div class="screan__close">
+                        <p>Нет, спасибо</p><img data-close src="icons/emoji/close.svg" alt="close">
+                    </div>
+                </div>
+                <div class="screan__descr">
+                    Оставьте заявку на тест-драйв и мы вам перезвоним через 30 секунд!
+                </div>
+                <div class="screan__input">
+                    <input placeholder="Ваш телефон" type="text">
+                    <button class="btn">Жду звонка!</button>
+                    <span class="time">00:30</span>
+                </div>
+                <div class="screan__offer">Сейчас не удобно? 
+                    <a href=""><u>Выберите удобное время для звонка.</a>
+                </div>
+                <div class="screan__policy">
+                    <input class="mini" checked type="checkbox">
+                    <span>Я согласен(а)<a href="#"><u>с условиями обработки данных.</a></span>
+                </div>
             </div>
-            <div class="modal__input">
-                <input type="text">
-                <button class="btn"></button>
-                <span class="time">00:30</span>
-            </div>
-            <div class="modal__offer">Сейчас не удобно? 
-                <a href=""><u>Выберите удобное время для звонка.</a>
-            </div>
-            <div class="modal__policy">
-                <input class="mini" checked type="radio">
-                <span>Я согласен(а)<a href="#"><u>с условиями обработки данных.</a></span>
+        </div> 
+
+                <!--Модальное окно №2-->
+        <div class="window">
+            <div class="window__wrapper">
+                <div class="window__block">
+                    <div class="window__logo">
+                        <img src="icons/logo.png" alt="logo">
+                    </div>
+                    <div class="window__close">
+                        <p>Нет, спасибо</p><img src="icons/emoji/close.svg" alt="close">
+                    </div>
+                </div>
+                <div class="window__descr">
+                    Не удобно принять звонок прямо сейчас?
+                    Давайте мы перезвоним сегодня ровно в 
+                    <div class="time">
+                        <input placeholder="20" type="number"><p>:</p>
+                        <input placeholder="00" type="number">
+                    </div>
+                </div>
+                <div class="window__input">
+                    <input placeholder="Ваш телефон" type="text">
+                    <button class="btn">Жду звонка!</button>
+                    <span class="time">00:30</span>
+                </div>
+                <div class="window__offer">Готовы поговорить 
+                    <a href=""><u>прямо сейчас?</a>
+                </div>
+                <div class="window__policy">
+                    <input class="mini" checked type="checkbox">
+                    <span>Я согласен(а)<a href="#"><u>с условиями обработки данных.</a></span>
+                </div>
             </div>
         </div>
-    </div>
+
+    </section>
+
     
+    
+    
+  
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/script.js"></script>
 
