@@ -8,7 +8,35 @@
     height: 100%;
     overflow: hidden;
     background-color: rgba(0,0,0,0.5);
-    
+
+    .time {
+        display: flex;
+        margin-left: 46%;
+        margin-top: -24px;
+        input {
+            width: 39px;
+            height: 22px;
+            background: #FFFFFF;
+            border: 1px solid #CFC5C5;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+        }
+        p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
     
     &__wrapper {
         position: fixed;
@@ -68,7 +96,7 @@
         line-height: 13px;
         color: #000000;
         margin-left: 10%;
-        margin-top: 50px;
+        margin-top: 23px;
     }
 
     &__descr {
@@ -86,7 +114,7 @@
     }
     &__input {
         display: flex;
-        margin-top: 30px;
+        margin-top: 57px;
         margin-left: 24%;
         input {
             width: 217px;
@@ -111,6 +139,10 @@
             font-size: 13px;
             line-height: 16px;
             color: #fff;
+            &:hover {
+                background-color: #FFFFFF;
+                color: $main-color;
+            }
         }
         span {
             font-family: Montserrat;
