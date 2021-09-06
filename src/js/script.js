@@ -12,6 +12,9 @@ $(window).scroll(function() {
     // Modal
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
+          slider = document.querySelector('.container'), //slider
+          prev = document.querySelector('.slider__img'), //slider
+          next = document.querySelector('.slider__img'), //slider
           modal = document.querySelector('.screan'),
           secondTrigger = document.querySelector('.screan__offer'),
           secondModal = document.querySelector('.window'),
@@ -71,8 +74,6 @@ $(window).scroll(function() {
             closeModal();
         }
     });
-
-
 
 });
 

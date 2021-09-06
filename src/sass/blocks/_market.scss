@@ -5,6 +5,8 @@
         .button {
             background-color: $main-color;
             color: #fff;
+            padding-top: 0px;
+            border-radius: 20px;
             &:hover {
                 background-color: #fff;
                 color: $main-color;
