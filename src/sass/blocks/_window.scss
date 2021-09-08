@@ -76,6 +76,11 @@
             margin-top: -89px;
             margin-left: 10px;
             cursor: pointer;
+            &:hover {
+                transition: 0.5s;
+                transform: scale(2) rotate(190deg);
+
+            }
         }
     }
     &__offer {
