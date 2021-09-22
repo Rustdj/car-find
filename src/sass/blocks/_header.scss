@@ -45,11 +45,26 @@
         display: flex;
         align-items: center;
         font-weight: 700;
+        a {
+            color: #fff;
+            &:hover {
+                color: red;
+                transition: 0.7s;
+            }
+        }
     }
     &__location {
         display: flex;
         align-items: center;
         font-weight: 700;
+        a {
+            color: #fff;
+            &:hover {
+                color: red;
+                transition: 0.7s;
+            }
+        }
+        
     }
     &__phone {
         display: flex;
@@ -59,6 +74,10 @@
             a {
                 color: #fff;
                 text-decoration: none;
+                &:hover {
+                    color: red;
+                    transition: 0.7s;
+                }
             }
         }
     }
