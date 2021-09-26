@@ -108,7 +108,7 @@ fieldset .placeholder {
   z-index: 5;
   font-size: 1.1rem;
   transition: all 0.25s;
-  color: #666;
+  color: #fff;
   pointer-events: none;
 }
 
@@ -130,6 +130,7 @@ fieldset input {
   position: relative;
   z-index: 3;
   outline-color: var(--dark-main-color);
+  
 }
 
 fieldset.with-placeholder input {
@@ -141,6 +142,8 @@ fieldset input[type=submit] {
   color: white;
   cursor: pointer;
   font-family: Roboto, K2D, Arial, Verdana, Sans-serif;
+  border: solid;
+  
 }
 
 footer {

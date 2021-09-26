@@ -14,16 +14,43 @@
             margin-left: 0%;
         }
     }
+
+    &__title {
+        a {
+            color: #000;
+            &:hover {
+                color: red;
+                transition: margin-right 2s, color 1s;
+            }
+        }
+    }
+    
+    &__title2 {
+        margin-left: 38px;
+        a {
+            color: #000;
+            &:hover {
+                color: red;
+                transition: margin-right 2s, color 1s;
+            }
+        }
+    }
+
+    &__title3 {
+        margin-left: 38px;
+        a {
+            color: #000;
+            &:hover {
+                color: red;
+                transition: margin-right 2s, color 1s;
+            }
+        }
+    }
+
     &__links {
         display: flex;
         padding-top: 50px;
         margin-left: 40%;
-    }
-    &__title2 {
-        margin-left: 38px;
-    }
-    &__title3 {
-        margin-left: 38px;
     }
 
     &__wrapper {

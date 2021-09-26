@@ -86,7 +86,7 @@ $(window).scroll(function() {
 
 
 const showLogContent = document.querySelector('.ghost'),
-    btnTrigger = document.querySelector('.btn_by'),
+    btnTrigger = document.querySelector('.header__pansil'),
     btnClose = document.querySelector('.form__close');
 
 btnTrigger.addEventListener('click', () => {
@@ -165,4 +165,21 @@ password.addEventListener("blur", function() {
 })
 
 
-// search interactiv
+//Form api
+const button = document.querySelector('.call');
+const image = document.querySelector('.auto');
+const url = 'https://jsonplaceholder.typicode.com/todos/1';
+
+
+async function fetchHandler() {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        image.src = data.file;
+    } catch (error) {
+        console.log(error);
+    }
+}
+button.addEventListener('click', () => {
+    fetchHandler();
+});

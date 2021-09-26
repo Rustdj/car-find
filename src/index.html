@@ -26,11 +26,11 @@
                     </div>
                     <div class="header__pansil">
                         <img src="icons/emoji/pansil.svg" alt="">
-                        <a href="#"><div class="title">Написать руководству</div></a>
+                        <a href="#"><div class="title">Войти</div></a>
                     </div>
                     <div class="header__location">
                         <img src="icons/emoji/location.svg" alt="">
-                        <a href="#"><div class="title">СПб, М. Жукова д. 40</div></a>
+                        <a href="#location"><div class="title">СПб, М. Жукова д. 40</div></a>
                     </div>
                     <div class="header__phone">
                         <img src="icons/emoji/phone.svg" alt="">
@@ -38,7 +38,7 @@
                     </div>
                     <div class="header__btn">
                         <span></span>
-                        <button data-modal class="call_back">Обратный звонок</button>
+                        <button id="img" data-modal class="call_back">Обратный звонок</button>
                     </div>
                 </div>
             </div>
@@ -162,8 +162,45 @@
                         <span class="slider round"></span>
                     </label>
                 </button>
-                <input placeholder="Марка" class="long" type="text">
-                <input placeholder="Модель" class="long" type="text">
+                <!-- <input placeholder="Марка"  class="long" type="text"> -->
+                <input placeholder="Марка" type="text" name="car-selection" list="car-selection">
+                <datalist id="car-selection">
+                <option list="audi" value="Audi">
+                    <option value="BMW">
+                        <option value="Ford">
+                            <option value="Mersedes-Benz">
+                                <option value="Nissan">
+                                <option value="Opel">
+                                    <option value="Skoda">
+                                        <option value="Toyota">
+                                        <option value="Volkswagen">
+                                            <option value="volvo">
+                                                <option value="Hyundai">
+                                                  <option value="Mazda">
+                                                    <option value="Porshe">
+                                                      <option value="">
+                                                        <option value="">
+                                                            <option value="">
+                                                              <option value="">
+                                                                <option value="">
+                                                                    <option value="">
+                                                                      <option value="">
+                                                                         <option value="">
+                                                                            <option value="">
+                                                                                <option value="">
+                                                                                  <option value="">
+                </datalist>
+
+                <input placeholder="Модель" class="long" type="text" name="car-model" list="car-model">
+                <datalist id="car-model">
+                    <option id="audi" value="A4">
+                        <option value="ewdwedwe">
+                            <option value="ewdwe">
+                                <option value="">
+                                    <option value="">
+                                        <option value="">
+                                            <option value="">
+                </datalist>
                 <div class="market__input">
                     <input placeholder="Год от" type="text">
                     <input placeholder="до" type="text">
@@ -222,7 +259,7 @@
             </div>
             <div class="offer__wrapper">
                 <div class="offer__item">
-                    <a href="card.html" target=""><img src="img/auto/hyu.png" alt=""></a>
+                    <a href="card.html" target=""><img class="auto" src="img/auto/hyu.png" alt=""></a>
                     <div class="name_auto">Huyndai Genesis</div>
                     <div class="descr">Автомат/3.0/249 л.с/бенз/2014</div>
                     <div class="subdescr">85 855 км</div>
@@ -395,7 +432,7 @@
             </div>
         </div>
     </section>
-    <section class="location">
+    <section id="location" class="location">
         <div class="container">
             <div class="location__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2004.0021188387466!2d30.218865315976373!3d59.84910498184368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963a550de1fe47%3A0x4553dcb1b4026917!2z0L_RgC4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCA0MCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5ODMzMA!5e0!3m2!1sru!2sru!4v1630351614277!5m2!1sru!2sru"

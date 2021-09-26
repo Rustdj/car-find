@@ -8,6 +8,8 @@
     height: 100%;
     overflow: hidden;
     background-color: rgba(0,0,0,0.5);
+    
+    
 
     &__wrapper {
         position: relative;
@@ -19,6 +21,8 @@
         height: 400px;
         border-radius: 20px;   
         background-color: honeydew;
+        
+        
     }
     &__logo {
         margin-top: 30px;
@@ -174,6 +178,8 @@
 
 .show {
     display: block;
+    transition: 0.6s;
+    
 }
 .hide {
     display: none;
