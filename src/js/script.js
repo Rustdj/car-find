@@ -214,3 +214,15 @@ function insertMark(string, pos, len ) {
     return string.slice(0, pos)+'<mark>'+string.slice(pos, pos+len)+'</mark>'+string.slice(pos+len);
 }
 
+// Menu burger
+
+const iconMenu = document.querySelector('.header__burger');
+if (iconMenu) {
+    const menuBody = document.querySelector('.header__top');
+    iconMenu.addEventListener('click', function (e) {
+        document.body.classList.toggle('_lock');
+        iconMenu.classList.toggle('_active');
+        menuBody.classList.toggle('_active');
+    });
+}
+

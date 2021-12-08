@@ -1,0 +1,236 @@
+@media (max-width: 714px) {
+    .subheader {
+        &__menu {
+            display: none;
+        }
+    }
+
+    
+    .screan {
+        &__wrapper {
+            left: 15%;
+            top: 33%;
+            width: 455px;
+            height: 300px;
+        }
+    }
+    .market {
+        &__sidenav {
+            display: none;
+        }
+    }
+    .footer {
+        &__contact {
+            margin-left: 60%;
+            input {
+                width: 245px;
+            }
+        }
+    }
+    .title {
+        font-size: 17px;
+    }
+
+    .header {
+        &__btn {
+            z-index: 3;
+            margin-top: -91px;
+        }
+        &__logo {
+            z-index: 3;
+            margin-top: -39px;
+            margin-left: 449px;
+        }
+        
+        &__burger {
+            z-index: 1;
+            display: block;
+            position: relative;
+            width: 45px;
+            height: 30px;
+            cursor: pointer;
+            left: 40px;
+            //margin-top: 20px;
+            top: 40px;
+            span,
+            &::before,
+            &::after{
+                left: 0;
+                position: absolute;
+                height: 10%;
+                width: 100%;
+                transition: all 0.3s ease 0s;
+                background-color: #fff;
+            }
+            &::before, 
+            &::after {
+                content: "";
+            }
+            &::before {top: 0;}
+            &::after {bottom: 0;}
+            span {
+                top: 50%;
+                transform: scale(1) translate(0px, -50%);
+            }
+            &._active {
+                left: 40px;
+                transition: left 0.5s ease 0s;
+            }
+        }
+    
+        &__top {
+            position: fixed;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 100px 30px 30px 30px;
+            transition: left 0.5s ease 0s;
+            overflow: auto;
+            &::before {
+                content: "";
+                position: fixed;
+                width: 100%;
+                top: 0;
+                //left: 0;
+                //height: 115px;
+                background-color: #373a5b;
+                z-index: 2;
+            }
+            &._active {
+                left: 0;
+                transition: left 0.5s ease 0s;
+            }
+            &._lock {
+                overflow: hidden;
+            }
+        }
+    }
+    .carouselslide {
+        display: none;
+    }
+    .offer {
+        &__autologo {
+            margin-left: 0;
+        }
+        
+    }
+}
+
+@media (max-width: 1008px) {
+    .screan {
+        &__wrapper {
+            left: 10%;
+            
+        }
+    }
+}
+@media (max-width: 915px) {
+    .screan {
+        &__wrapper {
+            left: 5%;
+            
+        }
+    }
+}
+@media (max-width: 845px) {
+    .screan {
+        &__wrapper {
+            left: 2%;
+            
+        }
+    }
+}
+@media (max-width: 800px) {
+    .screan {
+        &__wrapper {
+            left: 23%;
+            width: 455px;
+            height: 300px;
+            
+        }
+        &__offer {
+            margin-left: 24%;
+            margin-top: 1px;
+        }
+        &__policy {
+            margin-left: 10%;
+            margin-top: 1px;
+        }
+        &__descr {
+            font-size: 14px;
+            margin-left: 21%;
+            width: 300px;
+        }
+        &__input {
+            margin-top: 5px;
+            margin-left: 9%;
+            input {
+                width: 165px;
+                height: 36px;
+                margin-right: 14px;
+            }
+            .btn {
+                width: 100px;
+                height: 42px;
+            }
+            span {
+                font-size: 22px;
+            }
+        
+        
+        }
+    }
+}
+@media (max-width: 529px) {
+    .screan {
+        &__wrapper {
+            left: 8%;
+            width: 455px;
+            height: 300px; 
+        }
+        
+    }
+}
+@media (max-width: 478px) {
+    .screan {
+        &__wrapper {
+            left: 8%;
+            width: 403px;
+            height: 321px; 
+        }
+        
+    }
+}
+@media (max-width: 441px) {
+    .screan {
+        &__wrapper {
+            left: 4%;
+            width: 403px;
+            height: 321px; 
+        }
+        
+    }
+}
+@media (max-width: 408px) {
+    .screan {
+        &__wrapper {
+            left: 0%;
+            width: 403px;
+            height: 321px; 
+        }
+        
+    }
+}
+@media (max-width: 401px) {
+    .screan {
+        &__wrapper {
+            left: 3%;
+            width: 372px;
+            height: 321px; 
+        }
+        
+    }
+}
+
