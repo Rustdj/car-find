@@ -73,10 +73,20 @@
                 </div>
 
                 <div class="search">
-                    <input type="text" placeholder="Search...">
+                    <input type="text" id="elastic" placeholder="Search...">
                     <div class="search__find"></div>
                 </div>
-
+                <!-- <div class="col-lg-12">
+                    <ul class="elastic">
+                        <li>lorem</li>
+                        <li>audi</li>
+                        <li>bmw</li>
+                        <li>amet</li>
+                        <li>privet</li>
+                        <li>do</li>
+                        <li>sit</li>
+                    </ul>
+                </div> -->
                 <!-- <div class="subheader__icon">  
                     <a href=""><img src="icons/emoji/find.svg" alt=""></a> 
                 </div> -->
@@ -85,7 +95,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -163,8 +172,8 @@
                     </label>
                 </button>
                 <!-- <input placeholder="Марка"  class="long" type="text"> -->
-                <input placeholder="Марка" type="text" name="car-selection" list="car-selection">
-                <datalist id="car-selection">
+                <input placeholder="Марка" id="elastic" type="text" name="car-selection" list="car-selection">
+                <datalist class="elastic" id="car-selection">
                 <option list="audi" value="Audi">
                     <option value="BMW">
                         <option value="Ford">
@@ -189,7 +198,7 @@
                                                                             <option value="">
                                                                                 <option value="">
                                                                                   <option value="">
-                </datalist>
+                </dataList>
 
                 <input placeholder="Модель" class="long" type="text" name="car-model" list="car-model">
                 <datalist id="car-model">
@@ -258,9 +267,9 @@
                 </div>
             </div>
             <div class="offer__wrapper">
-                <div class="offer__item">
+                <div class="offer__item elastic">
                     <a href="card.html" target=""><img class="auto" src="img/auto/hyu.png" alt=""></a>
-                    <div class="name_auto">Huyndai Genesis</div>
+                    <div class="name_auto">Huyndai Genesis </div>
                     <div class="descr">Автомат/3.0/249 л.с/бенз/2014</div>
                     <div class="subdescr">85 855 км</div>
                     <div class="color">Коричневый седан</div>
