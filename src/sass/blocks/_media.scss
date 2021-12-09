@@ -140,7 +140,7 @@
         }
         .header {
             &__wrapper {
-                //display: inline;
+                display: inline;
             }
             &__pansil {
                 margin-top: 57px;
@@ -240,6 +240,36 @@
         }
     }
 }
+@media (max-width: 617px) {
+    .container {
+        max-width: none;
+
+        .offer {
+            &__wrapper {
+                grid-template-columns: repeat(1,314px);
+                margin-left: 23px;
+            }
+            &__wrapper2 {
+                grid-template-columns: repeat(1,314px);
+                margin-left: 23px;
+            }
+            &__wrapper3 {
+                grid-template-columns: repeat(1,314px);
+                margin-left: 23px;
+            }
+        }
+        .footer {
+            &__contact {
+                margin-left: 25%;
+            }
+        }
+        .location {
+            &__wrapper {
+                margin-left: 25%;
+            }
+        }
+    }
+}
 @media (max-width: 529px) {
     .container {
         max-width: none;
@@ -298,17 +328,25 @@
         .offer {
             &__wrapper {
                 grid-template-columns: repeat(1,314px);
-                margin-left: 4px;
+                margin-left: -6px;
+            }
+            &__wrapper2 {
+                grid-template-columns: repeat(1,314px);
+                margin-left: -6px;
+            }
+            &__wrapper3 {
+                grid-template-columns: repeat(1,314px);
+                margin-left: -6px;
             }
         }
         .footer {
             &__contact {
-                margin-left: 23%;
+                margin-left: 9%;
             }
         }
         .location {
             &__wrapper {
-                margin-left: 25%;
+                margin-left: 5%;
             }
         }
     }

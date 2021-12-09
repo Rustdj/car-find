@@ -223,6 +223,8 @@ if (iconMenu) {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
+        //document.body.style.overflow = 'hidden';
+        //document.body.style.overflow = '';
     });
 }
 
