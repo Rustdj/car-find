@@ -1,7 +1,8 @@
 .footer {
     padding-top: 150px;
     &__contact {
-        margin-left: 50%;
+        //margin-left: 50%;
+        text-align: center;
         input {
             width: 350px;
             height: 40px;
@@ -36,7 +37,7 @@
             color: $main-color;
             border-radius: 5px;
             background: #FFFFFF;
-            margin-left: 55px;
+            margin-left: 0px;
             &:hover {
                 background-color: $main-color;
                 color: #FFFFFF;
@@ -48,14 +49,14 @@
             height: 15px;
         }
         .title {
-            margin-left: 35px;
+            //margin-left: 35px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
             line-height: 29px;
             p {
-                text-indent: 50px;
+                text-indent: 0px;
             }
         }
     }

@@ -1,14 +1,18 @@
 .offer {
     &__photo {
-        margin-left: 45%;
+        //margin-left: 45%;
+        text-align: center;
         padding-top: 20px;
     }
     &__autologo {
-        margin-left: 35%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 0%;
         margin-top: 60px;
-        img {
-            margin-left: 43px;
-        }
+        padding: 0 15px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        flex: 0 0 20%;
         hr {
             margin-right: 5%;
             margin-left: 0%;
@@ -50,7 +54,8 @@
     &__links {
         display: flex;
         padding-top: 50px;
-        margin-left: 40%;
+        //margin-left: 40%;
+        justify-content: space-around;
     }
 
     &__wrapper {
