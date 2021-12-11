@@ -3,10 +3,10 @@
 
 // скрывающийся скрол бокового меню (aside)
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 650) {
-        $('.market__sidenav').fadeIn();
+    if ($(this).scrollTop() > 800) {
+        $('.block__item').fadeIn();
     } else {
-        $('.market__sidenav').fadeOut();
+        $('.block__item').fadeOut();
 
     };
 

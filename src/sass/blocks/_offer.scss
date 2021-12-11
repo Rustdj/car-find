@@ -13,10 +13,11 @@
         row-gap: 20px;
         flex-wrap: wrap;
         flex: 0 0 20%;
-        hr {
-            margin-right: 5%;
-            margin-left: 0%;
+        img {
+            width: 50px;
+            height: 45px;
         }
+        
     }
 
     &__title {
@@ -60,7 +61,7 @@
 
     &__wrapper {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         margin-top: 50px;
         .btns {
             .call {
@@ -75,7 +76,7 @@
     }
     &__wrapper2 {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         margin-top: 100px;
         .btns {
             .call {
@@ -89,7 +90,7 @@
     }
     &__wrapper3 {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         margin-top: 100px;
         .btns {
             .call {
