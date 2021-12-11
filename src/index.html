@@ -167,83 +167,95 @@
     </section>-->
     <section class="market">
         <div class="container">
-            <div id="showScroll" class="market__sidenav">
-                <button class="toggle">
-                    <img src="icons/emoji/fire.svg" alt="fire">
-                    <div class="descr">Лучшие предложения</div>
-                    <!--<img class="onclick" src="icons/emoji/toggle.svg" alt="toggle">-->
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </button>
-                <!-- <input placeholder="Марка"  class="long" type="text"> -->
-                <input placeholder="Марка" id="elastic" type="text" name="car-selection" list="car-selection">
-                <datalist class="elastic" id="car-selection">
-                <option list="audi" value="Audi">
-                    <option value="BMW">
-                        <option value="Ford">
-                            <option value="Mersedes-Benz">
-                                <option value="Nissan">
-                                <option value="Opel">
-                                    <option value="Skoda">
-                                        <option value="Toyota">
-                                        <option value="Volkswagen">
-                                            <option value="volvo">
-                                                <option value="Hyundai">
-                                                  <option value="Mazda">
-                                                    <option value="Porshe">
-                                                      <option value="">
-                                                        <option value="">
-                                                            <option value="">
+            <div class="block">
+                <div class="block__item">
+                    <div class="block__title">Автоподбор</div>
+                    <div class="block__text">
+                        <input type="text">
+                        <input type="text">
+                        <button class="btn">Поиск</button>
+                    </div>
+                </div>
+            </div>
+                    <!-- <div id="showScroll" class="market__sidenav">
+                        <button class="toggle">
+                            <img src="icons/emoji/fire.svg" alt="fire">
+                            <div class="descr">Лучшие предложения</div>
+                            <img class="onclick" src="icons/emoji/toggle.svg" alt="toggle">-->
+                            <!-- <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </button> -->
+                        <!-- <input placeholder="Марка"  class="long" type="text"> -->
+                        <!-- <input placeholder="Марка" id="elastic" type="text" name="car-selection" list="car-selection">
+                        <datalist class="elastic" id="car-selection">
+                        <option list="audi" value="Audi">
+                            <option value="BMW">
+                                <option value="Ford">
+                                    <option value="Mersedes-Benz">
+                                        <option value="Nissan">
+                                        <option value="Opel">
+                                            <option value="Skoda">
+                                                <option value="Toyota">
+                                                <option value="Volkswagen">
+                                                    <option value="volvo">
+                                                        <option value="Hyundai">
+                                                          <option value="Mazda">
+                                                            <option value="Porshe">
                                                               <option value="">
                                                                 <option value="">
                                                                     <option value="">
                                                                       <option value="">
-                                                                         <option value="">
+                                                                        <option value="">
                                                                             <option value="">
-                                                                                <option value="">
-                                                                                  <option value="">
-                </dataList>
-
-                <input placeholder="Модель" class="long" type="text" name="car-model" list="car-model">
-                <datalist id="car-model">
-                    <option id="audi" value="A4">
-                        <option value="ewdwedwe">
-                            <option value="ewdwe">
-                                <option value="">
-                                    <option value="">
+                                                                              <option value="">
+                                                                                 <option value="">
+                                                                                    <option value="">
+                                                                                        <option value="">
+                                                                                          <option value="">
+                        </dataList>
+        
+                        <input placeholder="Модель" class="long" type="text" name="car-model" list="car-model">
+                        <datalist id="car-model">
+                            <option id="audi" value="A4">
+                                <option value="ewdwedwe">
+                                    <option value="ewdwe">
                                         <option value="">
                                             <option value="">
-                </datalist>
-                <div class="market__input">
-                    <input placeholder="Год от" type="text">
-                    <input placeholder="до" type="text">
-                </div>
-                <div class="market__input2">
-                    <input placeholder="Пробег от,км" type="text">
-                    <input placeholder="до" type="text">
-                </div>
-                <div class="market__input3">
-                    <input placeholder="Привод" type="text">
-                    <input placeholder="Тип КПП" type="text">
-                </div>
-                <div class="market__input4">
-                    <input placeholder="Тип кузова" type="text">
-                    <input placeholder="Тип двигателя" type="text">
-                </div>
-                <div class="market__input5">
-                    <input placeholder="Объм от,л" type="text">
-                    <input placeholder="до" type="text">
-                </div>
-                <div class="market__input6">
-                    <input placeholder="Цена от" type="text">
-                    <input placeholder="до" type="text">
-                </div>
-                <div class="market__button">
-                    <button class="button">Начать поиск</button>
-                </div>
-            </div>
+                                                <option value="">
+                                                    <option value="">
+                        </datalist>
+                        <div class="market__input">
+                            <input placeholder="Год от" type="text">
+                            <input placeholder="до" type="text">
+                        </div>
+                        <div class="market__input2">
+                            <input placeholder="Пробег от,км" type="text">
+                            <input placeholder="до" type="text">
+                        </div>
+                        <div class="market__input3">
+                            <input placeholder="Привод" type="text">
+                            <input placeholder="Тип КПП" type="text">
+                        </div>
+                        <div class="market__input4">
+                            <input placeholder="Тип кузова" type="text">
+                            <input placeholder="Тип двигателя" type="text">
+                        </div>
+                        <div class="market__input5">
+                            <input placeholder="Объм от,л" type="text">
+                            <input placeholder="до" type="text">
+                        </div>
+                        <div class="market__input6">
+                            <input placeholder="Цена от" type="text">
+                            <input placeholder="до" type="text">
+                        </div>
+                        <div class="market__button">
+                            <button class="button">Начать поиск</button>
+                        </div>
+                    </div> --> 
+            
+            
         </div>
     </section>
     <section class="offer">
@@ -259,7 +271,7 @@
                 <img src="icons/auto_logo/porshe.svg" alt="">
                 <img src="icons/auto_logo/volvo.svg" alt="">
                 <img src="icons/auto_logo/vw.svg" alt="">
-                <hr>
+               
             </div>
             <div class="offer__links">
                 <div class="offer__title">

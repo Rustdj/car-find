@@ -1,3 +1,16 @@
+@media (max-width: 1280px) {
+    .offer {
+        &__wrapper {
+            justify-content: center;
+        } 
+        &__wrapper2 {
+            justify-content: center;
+        } 
+        &__wrapper3 {
+            justify-content: center;
+        } 
+    }
+}
 @media (max-width: 714px) {
     .subheader {
         &__menu {
@@ -38,8 +51,9 @@
         }
         &__logo {
             z-index: 3;
-            margin-top: -39px;
-            margin-left: 449px;
+            margin-top: 18px;
+            //margin-left: 449px;
+            text-align: center;
         }
         
         &__burger {
@@ -156,6 +170,17 @@ body {
         }
     }
 }
+@media (max-width: 1024px) {
+    .screan {
+        &__wrapper {
+            left: 11%;
+            width: 779px;
+            height: 412px; 
+        }
+        
+    }
+}
+
 @media (max-width: 800px) {
     .screan {
         &__wrapper {
@@ -197,6 +222,26 @@ body {
         }
     }
 }
+@media (max-width: 667px) {
+    .screan {
+        &__wrapper {
+            left: 15%;
+            width: 455px;
+            height: 300px; 
+        }
+        
+    }
+}
+@media (max-width: 595px) {
+    .screan {
+        &__wrapper {
+            left: 12%;
+            width: 455px;
+            height: 300px; 
+        }
+        
+    }
+}
 @media (max-width: 529px) {
     .screan {
         &__wrapper {
@@ -220,7 +265,17 @@ body {
 @media (max-width: 441px) {
     .screan {
         &__wrapper {
-            left: 4%;
+            left: 3%;
+            width: 403px;
+            height: 321px; 
+        }
+        
+    }
+}
+@media (max-width: 414px) {
+    .screan {
+        &__wrapper {
+            left: 1%;
             width: 403px;
             height: 321px; 
         }
@@ -244,6 +299,72 @@ body {
             width: 372px;
             height: 321px; 
         }
+        &__input {
+            margin-left: 2px;
+            span {
+                font-size: 16px;
+            }
+        }
+        
+    }
+}
+@media (max-width: 375px) {
+    .screan {
+        &__wrapper {
+            left: 3%;
+            width: 356px;
+            height: 321px; 
+        }
+        &__input {
+            margin-left: 2px;
+            span {
+                font-size: 16px;
+            }
+        }
+        
+    }
+}
+@media (max-width: 360px) {
+    .screan {
+        &__wrapper {
+            left: 0%;
+            width: 356px;
+            height: 321px; 
+        }
+        &__input {
+            margin-left: 2px;
+            span {
+                font-size: 16px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 320px) {
+    .screan {
+        &__wrapper {
+            left: 3%;
+            width: 300px;
+            height: 321px; 
+        }
+        &__input {
+            margin-left: 2px;
+            span {
+                font-size: 16px;
+                display: none;
+            }
+        }
+        &__close {
+            img {
+                margin-top: -108px;
+                margin-left: -9px;
+            }
+        }
+        &__descr {
+            margin-left: 6%;
+        }
+
         
     }
 }

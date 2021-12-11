@@ -3,6 +3,7 @@
         max-width: 1200px;
     }
 }
+
 @media (max-width: 1200px) {
     .container {
         max-width: 1024px;
@@ -111,6 +112,41 @@
         .location {
             &__wrapper {
                 margin-left: 61%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        .footer {
+            &__contact {
+                margin-left: 5%;
+            }
+        }
+        .btn {
+            margin-left: 0;
+        }
+        .offer {
+            &__wrapper {
+                grid-template-columns: repeat(2, 320px);
+                row-gap: 50px;
+                column-gap: 20px;
+                justify-content: center;
+                margin-left: 0px;
+            }
+            &__wrapper2 {
+                grid-template-columns: repeat(2, 320px);
+                row-gap: 50px;
+                column-gap: 20px;
+                justify-content: center;
+                margin-left: 0px;
+            }
+            &__wrapper3 {
+                grid-template-columns: repeat(2, 320px);
+                row-gap: 50px;
+                column-gap: 20px;
+                justify-content: center;
+                margin-left: 0px;
             }
         }
     }
@@ -270,6 +306,18 @@
         }
     }
 }
+@media (max-width: 540px) {
+    .container {
+        .footer {
+            &__contact {
+                margin-left: 0%;
+            }
+        }
+        .btn {
+            margin-left: 0;
+        }
+    }
+}
 @media (max-width: 529px) {
     .container {
         max-width: none;
@@ -292,6 +340,30 @@
         }
     }
 }
+@media (max-width: 414px) {
+    .container {
+        .footer {
+            &__contact {
+                margin-left: 0%;
+            }
+        }
+        .btn {
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width: 411px) {
+    .container {
+        .footer {
+            &__contact {
+                margin-left: 0%;
+            }
+        }
+        .btn {
+            margin-left: 0;
+        }
+    }
+}
 @media (max-width: 375px) {
     .container {
         max-width: none;
@@ -301,6 +373,14 @@
                 margin-left: 14%;
             }
             
+        }
+        .footer {
+            &__contact {
+                margin-left: 0%;
+            }
+        }
+        .btn {
+            margin-left: 0;
         }
     }
 }
@@ -347,6 +427,15 @@
         .location {
             &__wrapper {
                 margin-left: 5%;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        .footer {
+            &__contact {
+                margin-left: 0%;
             }
         }
     }
