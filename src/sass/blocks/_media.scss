@@ -12,6 +12,17 @@
 @media (max-width: 1024px) {
     .container {
         max-width: 976px;
+
+        .block {
+            &__item {
+                margin: 20px 0 0 0;
+                position: fixed;
+                left: -19px;
+                right: 0;
+                top: 238px;
+                z-index: 2;
+            }
+        }
     }
 }
 @media (max-width: 1009px) {
@@ -381,6 +392,12 @@
         }
         .btn {
             margin-left: 0;
+        }
+        .block {
+            &__item {
+                left: -30px;
+                z-index: 2;
+            }
         }
     }
 }

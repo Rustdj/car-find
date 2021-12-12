@@ -9,9 +9,19 @@
     &__wrapper {
         display: flex;
         color: #fff;
-        justify-content: space-between;
-        
+        justify-content: space-between; 
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
     }
+    &__wrapper {
+        &._active {
+            transform: translate(0px, 0%);
+            opacity: 1;
+        }
+    }
+
     &__btn {
         
         .call_back {

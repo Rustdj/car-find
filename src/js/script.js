@@ -2,13 +2,30 @@
 
 
 // скрывающийся скрол бокового меню (aside)
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 800) {
-        $('.block__item').fadeIn();
-    } else {
-        $('.block__item').fadeOut();
+// $(window).scroll(function() {
+//     if ($(this).scrollTop() > 500) {
+//         $('.block__item').fadeIn();
+//     } else {
+//         $('.block__item').fadeOut();
 
-    };
+//     };
+
+    window.onscroll = () => {
+        const header = document.querySelector('.block__item');
+        const Y = window.scrollY;
+
+        if (Y > 500) {
+            header.classList.add('_active')
+        } else {
+            header.classList.remove('_active')
+        }
+
+        // if (Y < 500) {
+        //    header.classList.add('_active');
+        // } else {
+        //     header.classList.remove('hide');
+        // }
+    }
 
 
     // Modal
@@ -67,7 +84,7 @@ $(window).scroll(function() {
     });
     //=============================================================
 
-});
+
 
 //================ Input интерактивный ========================
 
@@ -237,3 +254,44 @@ $(document).ready(function() {
     });
 });
 
+
+//  Animated
+
+const animItems = document.querySelectorAll('._anim-items');
+
+if (animItems.length > 0) {
+    window.addEventListener('click', animOnScroll);
+    function animOnScroll() {
+        for (let index = 0; index < animItems.length; index++) {
+            const animItem = animItems[index];
+            const animItemHeight = animItem.offsetHeight;
+            const animItemOffset = offset(animItem).top;
+            const animStart = 4;
+
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+            if (animItemHeight > window.innerHeight) {
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+        }
+
+        if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+            animItem.classList.add('_active');
+        } else {
+            if (!animItem.classList.contains('_anim-no-hide')) {
+                animItem.classList.remove('_active');
+            } 
+        }
+    }
+}
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+
+    }
+    setTimeout(() => {
+        animOnScroll();
+    }, 300);
+    
+
+}
