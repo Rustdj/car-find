@@ -1,5 +1,24 @@
-.hide {
-    display: none;
+.input {
+    z-index: 2;
+    input {
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+    }
+}
+.btn {
+    width: 200px;
+    border: 1px solid red;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    z-index: 2;
+    &:hover {
+        background-color: red;
+        color: #fff;
+        transition: all 0.6s;
+    }
     
 }
 .block {

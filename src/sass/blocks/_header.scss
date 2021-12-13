@@ -67,8 +67,12 @@
         display: flex;
         align-items: center;
         font-weight: 700;
+        img {
+            margin-top: -10px;
+        }
         a {
             color: #fff;
+            margin: 5px;
             &:hover {
                 color: red;
                 transition: 0.7s;
@@ -84,6 +88,7 @@
             a {
                 color: #fff;
                 text-decoration: none;
+                margin: 5px;
                 &:hover {
                     color: red;
                     transition: 0.7s;

@@ -2,13 +2,7 @@
 
 
 // скрывающийся скрол бокового меню (aside)
-// $(window).scroll(function() {
-//     if ($(this).scrollTop() > 500) {
-//         $('.block__item').fadeIn();
-//     } else {
-//         $('.block__item').fadeOut();
 
-//     };
 
     window.onscroll = () => {
         const header = document.querySelector('.block__item');
@@ -20,11 +14,7 @@
             header.classList.remove('_active')
         }
 
-        // if (Y < 500) {
-        //    header.classList.add('_active');
-        // } else {
-        //     header.classList.remove('hide');
-        // }
+        
     }
 
 
@@ -32,56 +22,80 @@
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
         modal = document.querySelector('.screan'),
-        secondTrigger = document.querySelector('.screan__offer'),
-        secondModal = document.querySelector('.window'),
-        secondCloseModal = document.querySelector('.window__close'),
         modalCloseBtn = document.querySelector('[data-close]');
+        //secondTrigger = document.querySelector('.screan__offer'),
+        //secondModal = document.querySelector('.window'),
+        //secondCloseModal = document.querySelector('.window__close'),
+        
+
+    modalTrigger.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        })
+    });
+
+    modalCloseBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    document.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
 
 
     //==============Second modal========================================
 
-    secondTrigger.addEventListener('click', () => {
-        secondModal.classList.add('show');
-        secondModal.classList.remove('hide');
-        document.body.style.overflow = 'hidden';
-    });
+    // secondTrigger.addEventListener('click', () => {
+    //     secondModal.classList.add('show');
+    //     secondModal.classList.remove('hide');
+    //     document.body.style.overflow = 'hidden';
+    // });
 
-    function closeWindow() {
-        secondModal.classList.add('hide');
-        secondModal.classList.remove('show');
-        document.body.style.overflow = '';
-    }
+    // function closeWindow() {
+    //     secondModal.classList.add('hide');
+    //     secondModal.classList.remove('show');
+    //     document.body.style.overflow = '';
+    // }
 
-    secondCloseModal.addEventListener('click', closeWindow);
+    // secondCloseModal.addEventListener('click', closeWindow);
 
-    secondModal.addEventListener('click', (e) => {
-        if (e.target === secondModal) {
-            closeWindow();
-        }
-    });
+    // secondModal.addEventListener('click', (e) => {
+    //     if (e.target === secondModal) {
+    //         closeWindow();
+    //     }
+    // });
 
     //============= main modal ====================================
-    modalTrigger.forEach(btn => {
-        btn.addEventListener('click', () => {
-            modal.classList.add('show');
-            modal.classList.remove('hide');
-            document.body.style.overflow = 'hidden'; // отключает скролл при открытой модалке
-        });
-    });
+    // modalTrigger.forEach(btn => {
+    //     btn.addEventListener('click', () => {
+    //         modal.classList.add('show');
+    //         modal.classList.remove('hide');
+    //         document.body.style.overflow = 'hidden'; // отключает скролл при открытой модалке
+    //         modal.classList.add('active');
+    //         modal.classList.remove('active');
+            
+    //     });
+    // });
 
-    function closeModal() {
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
-    }
+    // function closeModal() {
+    //     modal.classList.add('hide');
+    //     modal.classList.remove('show');
+    //     document.body.style.overflow = '';
+    //     modal.classList.remove('_active');
+    // }
 
-    modalCloseBtn.addEventListener('click', closeModal);
+    // modalCloseBtn.addEventListener('click', closeModal);
 
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
+    // modal.addEventListener('click', (e) => {
+    //     if (e.target === modal) {
+    //         closeModal();
+    //     }
+    // });
     //=============================================================
 
 
