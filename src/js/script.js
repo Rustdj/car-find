@@ -47,59 +47,6 @@
         }
     });
 
-
-    //==============Second modal========================================
-
-    // secondTrigger.addEventListener('click', () => {
-    //     secondModal.classList.add('show');
-    //     secondModal.classList.remove('hide');
-    //     document.body.style.overflow = 'hidden';
-    // });
-
-    // function closeWindow() {
-    //     secondModal.classList.add('hide');
-    //     secondModal.classList.remove('show');
-    //     document.body.style.overflow = '';
-    // }
-
-    // secondCloseModal.addEventListener('click', closeWindow);
-
-    // secondModal.addEventListener('click', (e) => {
-    //     if (e.target === secondModal) {
-    //         closeWindow();
-    //     }
-    // });
-
-    //============= main modal ====================================
-    // modalTrigger.forEach(btn => {
-    //     btn.addEventListener('click', () => {
-    //         modal.classList.add('show');
-    //         modal.classList.remove('hide');
-    //         document.body.style.overflow = 'hidden'; // отключает скролл при открытой модалке
-    //         modal.classList.add('active');
-    //         modal.classList.remove('active');
-            
-    //     });
-    // });
-
-    // function closeModal() {
-    //     modal.classList.add('hide');
-    //     modal.classList.remove('show');
-    //     document.body.style.overflow = '';
-    //     modal.classList.remove('_active');
-    // }
-
-    // modalCloseBtn.addEventListener('click', closeModal);
-
-    // modal.addEventListener('click', (e) => {
-    //     if (e.target === modal) {
-    //         closeModal();
-    //     }
-    // });
-    //=============================================================
-
-
-
 //================ Input интерактивный ========================
 
 // document.querySelectorAll("fieldset.with-placeholder input").forEach(function(el, idx) {
@@ -117,29 +64,46 @@
 
 
 const showLogContent = document.querySelector('.ghost'),
-    btnTrigger = document.querySelector('.header__pansil'),
-    btnClose = document.querySelector('.form__close');
+    btnTrigger = document.querySelectorAll('.header__pansil'),
+    btnClose = document.querySelector('.ghost__close');
 
-btnTrigger.addEventListener('click', () => {
-    showLogContent.classList.add('show');
-    showLogContent.classList.remove('hide');
-    document.body.style.overflow = 'hidden';
+    btnTrigger.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            showLogContent.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    btnClose.addEventListener('click', () => {
+        showLogContent.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+    document.addEventListener('click', (e) => {
+        if (e.target === showLogContent) {
+        showLogContent.classList.remove('active');
+        }
+    });
 
-});
+// btnTrigger.addEventListener('click', () => {
+//     showLogContent.classList.add('show');
+//     showLogContent.classList.remove('hide');
+//     document.body.style.overflow = 'hidden';
 
-function modalClose() {
-    showLogContent.classList.add('hide');
-    showLogContent.classList.remove('show');
-    document.body.style.overflow = '';
-}
+// });
 
-btnClose.addEventListener('click', modalClose);
+// function modalClose() {
+//     showLogContent.classList.add('hide');
+//     showLogContent.classList.remove('show');
+//     document.body.style.overflow = '';
+// }
 
-showLogContent.addEventListener('click', (e) => {
-    if (e.target === btnClose) {
-        modalClose();
-    }
-});
+// btnClose.addEventListener('click', modalClose);
+
+// showLogContent.addEventListener('click', (e) => {
+//     if (e.target === btnClose) {
+//         modalClose();
+//     }
+// });
 
 
 
@@ -194,7 +158,7 @@ password.addEventListener("blur", function() {
     document.querySelector("#ghost-arm-left").setAttribute("d", "M 155,88 C 191,90 194,114 192,125 191,137 172,109 155,116");
     document.querySelector("#ghost-arm-right").setAttribute("d", "M 45,89 C 25,92 9,108 11,124 13,141 27,115 48,119");
 })
-
+//================================================
 
 //Form api
 const button = document.querySelector('.call');
@@ -264,7 +228,7 @@ if (iconMenu) {
 
 $(document).ready(function() {
     $('.block__title').click(function(event) {
-        $(this).toggleClass('active').next().slideToggle(300);
+        $(this).toggleClass('active').next().slideToggle(400);
     });
 });
 

@@ -22,9 +22,10 @@
     
 }
 .block {
+    
     //width: 100%;
     &__item {
-        transition: all 0.8s ease 0s;
+        //transition: all 0.8s ease 0s;
         opacity: 0;
         margin: 20px 0px 0px 0px;
         position: fixed;
@@ -45,11 +46,13 @@
         position: relative;
         cursor: pointer;
         padding: 0px 0px 0px 30px;
+        transition: all 0.5s ease 0s;
         
         img {
             width: 60px;
-            //border: 3px solid blue;
-            //border-radius: 100%;
+            transition: all 0.8s ease 0s;
+            border: 3px solid blue;
+            border-radius: 100%;
         }
         &::before,
         &::after {
@@ -67,6 +70,7 @@
     &__text {
         display: none;
         padding: 10px 0px 0px 0px;
+        transition: all 0.8s ease 0s;
     }
 }
 .block__title::before {
@@ -90,5 +94,5 @@
     border: 3px solid red;
     border-radius: 100%;
     transform: rotate(180deg);
-    transition: all 0.6s ease 0s;
+    transition: all 0.8s ease 0s;
 }
