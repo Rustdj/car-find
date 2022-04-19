@@ -4,4 +4,4 @@
 <h3>Template layout using html, scss, js.</h3>
 <a href="https://rustdj.github.io/car-find/" target="_blank">Click on my project >></a>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=My+contacts+to+contact+me + rustdj@icloud.com)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=My+contacts+to+contact+me+rustdj@icloud.com)](https://git.io/typing-svg)
