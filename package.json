@@ -1,11 +1,12 @@
 {
-  "name": "https://rustdj.github.io/car-find",
+  "name": "car_find",
   "version": "1.0.0",
   "main": "index.js",
+  "homepages": "https://rustdj.github.io/car-find/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "rust",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.5",
