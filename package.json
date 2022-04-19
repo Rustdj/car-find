@@ -4,7 +4,7 @@
   "main": "index.js",
   "homepage": "https://rustdj.github.io/car-find",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "ph-pages -d dist"
   },
   "author": "rust",
   "license": "ISC",
@@ -431,7 +431,6 @@
   "bugs": {
     "url": "https://github.com/Rustdj/car-find/issues"
   },
-  "homepage": "https://github.com/Rustdj/car-find#readme",
   "keywords": [],
   "description": ""
 }
